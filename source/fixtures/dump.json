@@ -444,7 +444,6 @@
             "name": "Макароны Barilla Bucatini Букатини N9, 400 гр",
             "description": "Макароны Barilla Bucatini Букатини N9, 400 гр",
             "image": "",
-            "category": "grocery",
             "product_left": 20,
             "price": "870.00"
         }
@@ -456,7 +455,6 @@
             "name": "Сахар",
             "description": "Сахарный песок, весовой, Казахстан",
             "image": "",
-            "category": "grocery",
             "product_left": 42,
             "price": "582.00"
         }
@@ -468,7 +466,6 @@
             "name": "Сок Rich апельсиновый 1000 мл",
             "description": "Сок Rich апельсиновый 1000 мл, Россия",
             "image": "",
-            "category": "drinks",
             "product_left": 11,
             "price": "995.00"
         }
@@ -480,7 +477,6 @@
             "name": "Сок Gracio вишневый 950 мл",
             "description": "Сок Gracio вишневый 950 мл, Казахстан",
             "image": "",
-            "category": "other",
             "product_left": 31,
             "price": "860.00"
         }
@@ -492,7 +488,6 @@
             "name": "Порошок стиральный Persil expert color 360° 3000г",
             "description": "",
             "image": "",
-            "category": "household chemicals",
             "product_left": 5,
             "price": "6035.00"
         }
@@ -504,7 +499,6 @@
             "name": "Кондиционер для белья Vernel Ароматерапия + Пион и Белый чай, 1740 мл",
             "description": "Кондиционер для белья Vernel Ароматерапия + Пион и Белый чай, 1740 мл, Россия",
             "image": "",
-            "category": "household chemicals",
             "product_left": 17,
             "price": "2040.00"
         }
@@ -516,7 +510,6 @@
             "name": "Картофель",
             "description": "Картофель , 1000гр, Казахстан",
             "image": "",
-            "category": "other",
             "product_left": 30,
             "price": "186.00"
         }
@@ -528,7 +521,6 @@
             "name": "Мед",
             "description": "Мед Лепсинск натуральный, 530гр, Казахстан",
             "image": "",
-            "category": "other",
             "product_left": 9,
             "price": "4680.00"
         }

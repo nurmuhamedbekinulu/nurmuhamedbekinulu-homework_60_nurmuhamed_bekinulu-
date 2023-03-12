@@ -1,6 +1,7 @@
 from django.db import models
-from static.classes.static import Static
 from django.core.validators import MinValueValidator
+from django.utils import timezone
+from webapp.models.categories import Category
 
 # Create your models here.
 
@@ -22,13 +23,12 @@ class Product(models.Model):
         null=False, blank=False,
         verbose_name="Фото товара"
         )
-    category = models.CharField(
-        max_length=200,
+    category = models.ForeignKey(
+        Category,
+        on_delete=models.RESTRICT, 
         null=False,
         blank=False,
-        choices=Static.choices,
-        default='other',
-        verbose_name="Категория"
+        default=1
         )
     product_left = models.IntegerField(
         validators=[MinValueValidator(0)],
@@ -44,6 +44,16 @@ class Product(models.Model):
         blank=False,
         verbose_name="Стоимость"
         )
+    is_deleted = models.BooleanField(
+        verbose_name='удалено',
+        null=False,
+        default=False
+    )
 
-    class Meta:
-        ordering = ['category', 'name']
+    def __str__(self):
+        return f"{self.title} - {self.description}"
+
+    def delete(self, using=None, keep_parents=False):
+        self.is_deleted = True
+        self.deleted_at = timezone.now()
+        self.save()

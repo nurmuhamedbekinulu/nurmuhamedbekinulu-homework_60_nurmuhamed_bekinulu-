@@ -1,4 +1,4 @@
-from source.webapp.models.products import Product
+from webapp.models import Product
 from django.views.generic import ListView, RedirectView
 from webapp.forms import SearchForm
 from django.db.models import Q
@@ -9,7 +9,8 @@ class IndexView(ListView):
     template_name = 'index.html'
     model = Product
     context_object_name = "products"
-    ordering = ('created_at',)
+    ordering = ['category', 'name']
+    queryset = Product.objects.exclude(product_left__lt=1)
     paginate_by = 10
     paginate_orphans = 1
 

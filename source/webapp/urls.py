@@ -1,15 +1,15 @@
 from django.urls import path
-from webapp.views.base import index_view
-from webapp.views.products import add_view, detail_view, update_view, delete_view, confirm_delete
+from webapp.views.base import IndexView, IndexRedirectView
+from webapp.views.products import ProductDetail, ProductUpdateView, ProductDeleteView, ProductCreateView
 
 
 urlpatterns = [
-    path("", index_view, name='index'),
-    path("product/", index_view),
-    path("product/add/", add_view, name='product_add'),
-    path("product/<int:pk>", detail_view, name='product_detail'),
-    path("product/<int:pk>/update/", update_view, name='product_update'),
-    path("product/<int:pk>/delete/", delete_view, name='product_delete'),
+    path("", IndexView.as_view(), name='index'),
+    path("product/", IndexRedirectView.as_view(), name='task_index_redirect'),
+    path("product/add/", ProductCreateView.as_view(), name='product_add'),
+    path("product/<int:pk>", ProductDetail.as_view(), name='product_detail'),
+    path("product/<int:pk>/update/", ProductUpdateView.as_view(), name='product_update'),
+    path("product/<int:pk>/delete/", ProductDeleteView.as_view(), name='product_delete'),
     path("product/<int:pk>/confirm_delete/",
-         confirm_delete, name='confirm_delete'),
+         ProductDeleteView.as_view(), name='confirm_delete'),
 ]

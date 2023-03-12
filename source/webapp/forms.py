@@ -1,6 +1,7 @@
 from django import forms
-from source.webapp.models.products import Product
+from webapp.models import Product
 from django.core.validators import BaseValidator
+from django.core.validators import MinValueValidator
 
 
 class CustomMaxLenValidator(BaseValidator):
@@ -28,17 +29,22 @@ class CustomMinLenValidator(BaseValidator):
 
 
 class ProductForm(forms.ModelForm):
-    title = forms.CharField(
+    name = forms.CharField(
         max_length=200,
-        validators=(CustomMinLenValidator(2), CustomMaxLenValidator(200)))
+        label='Имя товара',
+        validators=(CustomMinLenValidator(2), CustomMaxLenValidator(200))
+    )
     description = forms.CharField(
         max_length=3000,
-        validators=(CustomMinLenValidator(2), CustomMaxLenValidator(3000)))
+        label='Описание товара',
+        validators=(CustomMinLenValidator(2), CustomMaxLenValidator(3000))
+    )
+    product_left = forms.IntegerField(validators=[MinValueValidator(0)])
 
     class Meta:
         model = Product
-        fields = {'name', 'description', 'image',
-                  'category', 'product_left', 'price'}
+        fields = ['name', 'description', 'image',
+                  'category', 'product_left', 'price']
         labels = {
             'name': 'Имя товара',
             'description': 'Описание товара',

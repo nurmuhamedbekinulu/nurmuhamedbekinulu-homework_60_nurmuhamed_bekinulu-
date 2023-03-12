@@ -3,20 +3,33 @@
 {% block menu%}
 {% endblock %}
 {% block content%}
-<h1>Список продуктов</h1>
-{% for product in products %}
-<div class="card">
-  <img src="{{ product.image }}" class="card-img-top" alt="картинка: {{ product.name }}">
-  <div class="card-body">
-    <h5 class="card-title">{{ product.name }}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{ product.price }}</h6>
-    {% for choice in choices %}
-      {% if choice.0 == product.category %}
-      <p class="card-text">{{ choice.1 }} </p>
-      {% endif %}
-    {% endfor %}
-    <a href="{% url 'product_detail' product.pk %}" class="card-link">Подробнее...</a>
-  </div>
+<div class="container text-center mt-5">
+    <div class="row justify-content-around">
+        {% for product in products %}
+        <div class="col-5">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{ product.image }}" class="img-fluid rounded-start"
+                            alt="{{ product.name }}">
+                    </div>
+                    <div class="col-md-8 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <h6 class="card-title">Категория - {{ product.category }}</h6>
+                            <h5 class="card-text">Цена: {{ product.price }}₸</h5>
+                            <a href="{% url 'product_detail' product.pk %}" class="btn btn-outline-primary">подробнее...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>Продукты не найдены</p>
+        {% endfor %}
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+    </div>
 </div>
-{% endfor %}
 {% endblock %}

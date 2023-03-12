@@ -1,48 +1,6 @@
+{% load bootstrap5 %}
 {% csrf_token %}
-<div class="mb-3 row">
-    <label for="name" class="col-sm-2 col-form-label">Название</label>
-    <div class="col-sm-10">
-        <input type="text" class="form-control" id="name" name="name" value="{{ product.name }}" placeholder="{% if errors %} {{ errors.name}} {% endif %}">
-    </div>
-</div>
-<div class="mb-3 row">
-    <label for="description" class="col-sm-2 col-form-label">Описание</label>
-    <div class="col-sm-10">
-        <textarea class="form-control" name="description" id="description" cols="30" rows="10">{{ product.description }}</textarea>
-    </div>
-</div>
-<div class="mb-3 row">
-    <label for="image" class="col-sm-2 col-form-label">Фото продукта</label>
-    <div class="col-sm-10">
-        <input type="text" class="form-control" id="image" name="image" value="{{ product.image }}">
-    </div>
-</div>
-<div class="mb-3 row">
-    <label for="category" class="col-sm-2 col-form-label">Категория</label>
-    <div class="col-sm-10">
-        <select id="category" name="category" class="form-select">
-            {% for choice in choices %}
-            {% if product.category == choice.0 %}
-                <option value="{{ choice.0 }}" selected>{{ choice.1 }}</option>
-            {% else %}
-                <option value="{{ choice.0 }}" >{{ choice.1 }}</option>
-            {% endif %}
-            {% endfor %}
-        </select>
-    </div>
-</div>
-<div class="mb-3 row">
-    <label for="product_left" class="col-sm-2 col-form-label">Остаток</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="product_left" name="product_left" value="{{ product.product_left }}" placeholder="{% if errors %} {{ errors.product_left}} {% endif %}">
-    </div>
-</div>
-<div class="mb-3 row">
-    <label for="price" class="col-sm-2 col-form-label">Стоимость</label>
-    <div class="col-sm-10">
-        <input type="number" class="form-control" id="price" name="price" value="{{ product.price }}" placeholder="{% if errors %} {{ errors.price}} {% endif %}">
-    </div>
-</div>
-<div class="d-grid gap-2 col-8 mx-auto">
-    <button type="submit" class="btn btn-outline-primary mb-3">{{ button_text }}</button>
+{% bootstrap_form form %}
+<div class="form_row">
+    {% bootstrap_button button_type="submit" content=button_text %}
 </div>
