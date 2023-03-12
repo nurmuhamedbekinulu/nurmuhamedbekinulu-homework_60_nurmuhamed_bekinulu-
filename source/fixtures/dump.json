@@ -1,0 +1,537 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2023-02-26T07:08:56.852Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Product object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2023-02-26T07:10:21.912Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Product object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2023-02-26T07:11:40.615Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Product object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2023-02-26T07:12:24.551Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Product object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2023-02-26T07:13:26.014Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "Product object (5)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2023-02-26T07:14:36.800Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "Product object (6)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2023-02-26T07:15:26.005Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "7",
+            "object_repr": "Product object (7)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2023-02-26T07:17:06.443Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "8",
+            "object_repr": "Product object (8)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add product",
+            "content_type": 7,
+            "codename": "add_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change product",
+            "content_type": 7,
+            "codename": "change_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete product",
+            "content_type": 7,
+            "codename": "delete_product"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view product",
+            "content_type": 7,
+            "codename": "view_product"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$bk3WdkI0hAO3paIJxSd7E8$kVCvAt6rLOX4++xXVH53JbTS+b+lTY4gLqGOtEnpvcI=",
+            "last_login": "2023-02-26T07:05:40.435Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-02-26T06:15:47.767Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "webapp",
+            "model": "product"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "s2piuh0byhkmury1lx7kflhp10kmig1z",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAOLQIu3XsGMswMUjU0Ke3KeHfbpAvdvvf-f6uI61Li2mSOI6uLAnX6ZQnpKXUX_MB6nzRNdZnHpPdEH7bp28Tyuh7t30HBVra1hJ7Agc-OCQklO4QNuXPKzoYBkQcR8sEQJLHWeDYggVMn3NuOjfp8ARDQOPc:1pWB6K:oap8Jzf3oiVHGqvGbrdE7CTmB8diMdefI-AzQWqBwh0",
+            "expire_date": "2023-03-12T07:05:40.440Z"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 1,
+        "fields": {
+            "name": "Макароны Barilla Bucatini Букатини N9, 400 гр",
+            "description": "Макароны Barilla Bucatini Букатини N9, 400 гр",
+            "image": "",
+            "category": "grocery",
+            "product_left": 20,
+            "price": "870.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 2,
+        "fields": {
+            "name": "Сахар",
+            "description": "Сахарный песок, весовой, Казахстан",
+            "image": "",
+            "category": "grocery",
+            "product_left": 42,
+            "price": "582.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 3,
+        "fields": {
+            "name": "Сок Rich апельсиновый 1000 мл",
+            "description": "Сок Rich апельсиновый 1000 мл, Россия",
+            "image": "",
+            "category": "drinks",
+            "product_left": 11,
+            "price": "995.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 4,
+        "fields": {
+            "name": "Сок Gracio вишневый 950 мл",
+            "description": "Сок Gracio вишневый 950 мл, Казахстан",
+            "image": "",
+            "category": "other",
+            "product_left": 31,
+            "price": "860.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 5,
+        "fields": {
+            "name": "Порошок стиральный Persil expert color 360° 3000г",
+            "description": "",
+            "image": "",
+            "category": "household chemicals",
+            "product_left": 5,
+            "price": "6035.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 6,
+        "fields": {
+            "name": "Кондиционер для белья Vernel Ароматерапия + Пион и Белый чай, 1740 мл",
+            "description": "Кондиционер для белья Vernel Ароматерапия + Пион и Белый чай, 1740 мл, Россия",
+            "image": "",
+            "category": "household chemicals",
+            "product_left": 17,
+            "price": "2040.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 7,
+        "fields": {
+            "name": "Картофель",
+            "description": "Картофель , 1000гр, Казахстан",
+            "image": "",
+            "category": "other",
+            "product_left": 30,
+            "price": "186.00"
+        }
+    },
+    {
+        "model": "webapp.product",
+        "pk": 8,
+        "fields": {
+            "name": "Мед",
+            "description": "Мед Лепсинск натуральный, 530гр, Казахстан",
+            "image": "",
+            "category": "other",
+            "product_left": 9,
+            "price": "4680.00"
+        }
+    }
+    ]
+    

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Product{% endblock %}
+{% block menu %}
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'product_update' product.pk %}">Редактировать Продукт</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{% url 'product_delete' product.pk %}">Удалить Продукт</a>
+</li>
+{% endblock %}
+{% block content%}
+<div class="container">
+    <div class="card mt-5">
+        <img src="product.image" class="card-img-top" alt="product.name ">
+        <div class="card-body">
+            <h5 class="card-title">Название: {{ product.name }}</h5>
+            <p>Описание: {{ product.description|linebreaks }}</p>
+            <p>Категория: {{ choices_category }}</p>
+            <p>Остаток: {{ product.product_left }}</p>
+            <p>Стоимость: {{ product.price }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

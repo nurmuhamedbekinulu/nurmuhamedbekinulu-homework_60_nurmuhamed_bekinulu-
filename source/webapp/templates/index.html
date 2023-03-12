@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block menu%}
+{% endblock %}
+{% block content%}
+<h1>Список продуктов</h1>
+{% for product in products %}
+<div class="card">
+  <img src="{{ product.image }}" class="card-img-top" alt="картинка: {{ product.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ product.price }}</h6>
+    {% for choice in choices %}
+      {% if choice.0 == product.category %}
+      <p class="card-text">{{ choice.1 }} </p>
+      {% endif %}
+    {% endfor %}
+    <a href="{% url 'product_detail' product.pk %}" class="card-link">Подробнее...</a>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
