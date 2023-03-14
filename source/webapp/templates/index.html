@@ -26,6 +26,7 @@
                                 </div>
                             </div>
                             <h6 class="card-title">Категория - {{ product.category }}</h6>
+                            <p class="card-text">Остаток: {{ product.product_left }}</p>
                             <h5 class="card-text">Цена: {{ product.price }}₸</h5>
                             <a href="{% url 'product_detail' product.pk %}" class="btn btn-outline-primary">подробнее...</a>
                         </div>

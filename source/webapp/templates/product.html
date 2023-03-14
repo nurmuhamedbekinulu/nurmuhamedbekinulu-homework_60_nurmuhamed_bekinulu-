@@ -19,10 +19,10 @@
                 <div class="col-md-8 text-start">
                     <div class="card-body">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.category }}</p>
+                        <p class="card-text">Категория: {{ product.category }}</p>
                         <p class="card-text">{{ product.description }}</p>
-                        <h5 class="card-text">Цена
-                            from .product_in_cart import Product_in_cart: {{ product.price }}₸</h5>
+                        <p class="card-text">Остаток: {{ product.product_left }}</p>
+                        <h5 class="card-text">Цена: {{ product.price }}₸</h5>
                     </div>
                 </div>
             </div>
