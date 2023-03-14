@@ -1,5 +1,5 @@
 from django import forms
-from webapp.models import Product
+from webapp.models import Product, Product_in_cart
 from django.core.validators import BaseValidator
 from django.core.validators import MinValueValidator
 
@@ -52,6 +52,17 @@ class ProductForm(forms.ModelForm):
             'category': 'Категория',
             'product_left': 'Остаток',
             'price': 'Стоимость'
+        }
+
+
+class Add_in_cart_Form(forms.ModelForm):
+    quantity = forms.IntegerField(validators=[MinValueValidator(0)])
+
+    class Meta:
+        model = Product_in_cart
+        fields = ['quantity',]
+        labels = {
+            'quantity': 'Количество',
         }
 
 
