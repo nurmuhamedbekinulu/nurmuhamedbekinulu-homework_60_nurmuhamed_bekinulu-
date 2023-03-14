@@ -1,7 +1,6 @@
 from django import forms
-from webapp.models import Product, Product_in_cart
-from django.core.validators import BaseValidator
-from django.core.validators import MinValueValidator
+from webapp.models import Product, Product_in_cart, Order
+from django.core.validators import BaseValidator, MinValueValidator
 
 
 class CustomMaxLenValidator(BaseValidator):
@@ -68,6 +67,21 @@ class Add_in_cart_Form(forms.ModelForm):
             'quantity': 'Количество',
         }
 
+
+class OrderForm(forms.ModelForm):
+    user_name = forms.CharField(
+        max_length=200,
+        label='Имя',
+        validators=(CustomMinLenValidator(2), CustomMaxLenValidator(200))
+    )
+    class Meta:
+        model = Order
+        fields = ['user_name', 'contact', 'address']
+        labels = {
+            'user_name': 'Имя пользователя',
+            'contact': 'Телефон',
+            'address': 'Адрес',
+        }
 
 class SearchForm(forms.Form):
     search = forms.CharField(max_length=20, required=False, label='Найти')

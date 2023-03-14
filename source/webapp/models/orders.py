@@ -19,6 +19,12 @@ class Order(models.Model):
         blank=False,
         verbose_name="Остаток"
         )
+    user_name = models.CharField(
+        max_length=300,
+        null=False, blank=False,
+        verbose_name="Имя",
+        default=1
+    )
     contact = models.CharField(
         max_length=300,
         null=False, blank=False,
