@@ -56,7 +56,10 @@ class ProductForm(forms.ModelForm):
 
 
 class Add_in_cart_Form(forms.ModelForm):
-    quantity = forms.IntegerField(validators=[MinValueValidator(0)])
+    quantity = forms.IntegerField(
+        label='Количество',
+        validators=[MinValueValidator(0)]
+        )
 
     class Meta:
         model = Product_in_cart

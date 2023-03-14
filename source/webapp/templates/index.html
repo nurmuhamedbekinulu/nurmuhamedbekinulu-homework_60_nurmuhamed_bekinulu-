@@ -4,6 +4,7 @@
 {% endblock %}
 {% block content%}
 <div class="container text-center mt-5">
+    {% include 'partial/search.html' %}
     <div class="row justify-content-around">
         {% for product in products %}
         <div class="col-5">
@@ -15,7 +16,15 @@
                     </div>
                     <div class="col-md-8 text-start">
                         <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <div class="cart_icon">
+                                    <a href="{% url 'cart_add' product.pk %}">
+                                        <i class="fa-solid fa-cart-plus cart_icon_size"></i>
+                                    </a>
+                                    
+                                </div>
+                            </div>
                             <h6 class="card-title">Категория - {{ product.category }}</h6>
                             <h5 class="card-text">Цена: {{ product.price }}₸</h5>
                             <a href="{% url 'product_detail' product.pk %}" class="btn btn-outline-primary">подробнее...</a>
