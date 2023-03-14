@@ -288,6 +288,78 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add product_in_cart",
+        "content_type": 9,
+        "codename": "add_product_in_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change product_in_cart",
+        "content_type": 9,
+        "codename": "change_product_in_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete product_in_cart",
+        "content_type": 9,
+        "codename": "delete_product_in_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view product_in_cart",
+        "content_type": 9,
+        "codename": "view_product_in_cart"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add order",
+        "content_type": 10,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change order",
+        "content_type": 10,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete order",
+        "content_type": 10,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view order",
+        "content_type": 10,
+        "codename": "view_order"
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -349,6 +421,22 @@
     "fields": {
         "app_label": "webapp",
         "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "webapp",
+        "model": "product_in_cart"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "webapp",
+        "model": "order"
     }
 },
 {
@@ -583,6 +671,60 @@
         "category": 3,
         "product_left": 0,
         "price": "19260.00",
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "quantity": 7,
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 2,
+    "fields": {
+        "product": 8,
+        "quantity": 16,
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "quantity": 6,
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 4,
+    "fields": {
+        "product": 13,
+        "quantity": 7,
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 5,
+    "fields": {
+        "product": 13,
+        "quantity": 88,
+        "is_deleted": false
+    }
+},
+{
+    "model": "webapp.product_in_cart",
+    "pk": 6,
+    "fields": {
+        "product": 1,
+        "quantity": 17,
         "is_deleted": false
     }
 }
