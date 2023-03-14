@@ -58,7 +58,7 @@ class Add_in_cart_Form(forms.ModelForm):
     quantity = forms.IntegerField(
         label='Количество',
         validators=[MinValueValidator(0)]
-        )
+    )
 
     class Meta:
         model = Product_in_cart
@@ -74,6 +74,7 @@ class OrderForm(forms.ModelForm):
         label='Имя',
         validators=(CustomMinLenValidator(2), CustomMaxLenValidator(200))
     )
+
     class Meta:
         model = Order
         fields = ['user_name', 'contact', 'address']
@@ -82,6 +83,7 @@ class OrderForm(forms.ModelForm):
             'contact': 'Телефон',
             'address': 'Адрес',
         }
+
 
 class SearchForm(forms.Form):
     search = forms.CharField(max_length=20, required=False, label='Найти')

@@ -22,7 +22,8 @@ class CartCreateView(CreateView):
             product_in_cart.save()
             return redirect('index')
         else:
-            form.add_error('quantity', 'На складе не достаточно товара, введите число не выше остатка')
+            form.add_error(
+                'quantity', 'На складе не достаточно товара, введите число не выше остатка')
             return self.form_invalid(form)
 
 
